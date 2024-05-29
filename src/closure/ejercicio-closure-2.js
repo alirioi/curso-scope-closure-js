@@ -26,8 +26,7 @@ function createPetList() {
   const petList = [];
 
   function addPet(pet) {
-    //return pet ? petList.push(pet) : petList;
-    return pet ? [...petList, pet] : petList; // -> la misma linea de arriba pero con spread operator
+    return pet ? petList.push(pet) : petList;
   }
   return addPet
 }
